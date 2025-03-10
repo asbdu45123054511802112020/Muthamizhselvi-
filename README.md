@@ -66,3 +66,50 @@ function greetUser() {
 
 // Call the function to greet the user
 greetUser();
+/* Apply a background color to the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Set the font for the page */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style the main header */
+h1 {
+    color: #333333;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+/* Style the paragraph */
+p {
+    color: #666666;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style the unordered list */
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+}
+
+/* Style each list item */
+li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Style the image */
+img {
+    width: 400px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
