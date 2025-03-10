@@ -66,3 +66,55 @@ function greetUser() {
 
 // Call the function to greet the user
 greetUser();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Hello, Welcome to My JavaScript Page!</h1>
+    
+    <button onclick="changeText()">Click to Change Text</button>
+    <br><br>
+    <button onclick="askName()">Click to Enter Your Name</button>
+
+    <script>
+        // Function to change the text content of the h1 element
+        function changeText() {
+            document.getElementById("message").innerHTML = "You clicked the button!";
+        }
+
+        // Function to prompt the user for their name and display a greeting
+        function askName() {
+            var name = prompt("What's your name?");
+            if (name != null && name != "") {
+                alert("Hello, " + name + "! Welcome to my page.");
+            } else {
+                alert("You didn't enter a name.");
+            }
+        }
+    </script>
+</body>
+</html>
